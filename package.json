@@ -1,0 +1,15 @@
+{
+  "name": "homestay-demo",
+  "version": "1.0.0",
+  "description": "Premium Homestay Website — MERN Stack",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && node seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

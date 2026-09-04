@@ -1,0 +1,33 @@
+.rooms__heading {
+  text-align: center;
+  margin-bottom: var(--section-gap-inner);
+}
+
+.rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 968px) {
+  .rooms__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .rooms__grid {
+    grid-template-columns: 1fr;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 8px;
+  }
+
+  .rooms__grid > * {
+    min-width: 85%;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+}

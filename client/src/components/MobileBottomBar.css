@@ -1,0 +1,46 @@
+/* ── Mobile Bottom Bar (§4) ──
+   Sticky Call + Book Now — visible on scroll */
+.mobile-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--mist);
+  border-top: 1px solid var(--brass-rule);
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+.mobile-bar__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  font-family: var(--font-body);
+  font-size: var(--text-nav);
+  font-weight: 500;
+  border-radius: var(--card-radius);
+  text-decoration: none;
+  transition: all var(--duration) var(--ease-out);
+}
+
+.mobile-bar__btn--call {
+  background: transparent;
+  color: var(--deodar-green);
+  border: 1px solid var(--deodar-green);
+}
+
+.mobile-bar__btn--book {
+  background: var(--deodar-green);
+  color: var(--mist);
+}
+
+@media (max-width: 768px) {
+  .mobile-bar {
+    display: flex;
+  }
+}

@@ -1,0 +1,73 @@
+/* ── Guest Voices (§3.8) ──
+   Centred quotes · generous whitespace · NO star-rating rows */
+
+.voices__heading {
+  text-align: center;
+  margin-bottom: var(--section-gap-inner);
+}
+
+.voices__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(32px, 4vw, 56px);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.voice {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.voice__quote {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 1.8vw, 20px);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--deodar-ink);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.voice__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.voice__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--deodar-ink);
+}
+
+.voice__location {
+  font-size: var(--text-meta);
+  color: var(--slate);
+}
+
+@media (max-width: 640px) {
+  .voices__list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .voice {
+    position: relative;
+    padding: 0 16px;
+  }
+
+  /* Add a decorative brass rule between items on mobile */
+  .voice:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: var(--brass-rule);
+  }
+}
