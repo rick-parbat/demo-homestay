@@ -1,0 +1,36 @@
+.nearby-section { padding-bottom: 48px; }
+.nearby-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 75px; align-items: end; border-top: 1px solid var(--line); padding-top: 35px; }
+.nearby-intro h2 { margin-top: 12px; }
+.nearby-intro > p { color: var(--muted); font-size: 16px; }
+.nearby-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; list-style: none; padding: 0; margin: 28px 0 0; }
+.nearby-list li { display: flex; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
+.nearby-number { color: var(--rust); font-size: 12px; padding-top: 2px; }
+.nearby-list .eyebrow { font-size: 9px; letter-spacing: 1.6px; color: var(--muted); }
+.nearby-list h3 { font-size: 28px; margin: 6px 0 10px; }
+.nearby-description { font-size: 16px; color: var(--muted); }
+.nearby-list .text-link { font-size: 12px; margin-top: 8px; }
+.nearby-planning { display: flex; justify-content: space-between; align-items: center; gap: 30px; border-top: 1px solid var(--line); padding-top: 18px; }
+.nearby-planning p { color: var(--muted); font-size: 13px; }
+.nearby-planning .text-link { flex-shrink: 0; }
+@media (max-width: 700px) {
+  .nearby-section { padding-bottom: 35px; }
+  .nearby-intro { grid-template-columns: 1fr; gap: 18px; padding-top: 28px; }
+  .nearby-intro h2 { font-size: 32px; }
+  .nearby-list { grid-template-columns: 1fr; margin-top: 22px; }
+  .nearby-list li { gap: 14px; padding: 20px 0; }
+  .nearby-planning { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
+.more-sightseeing { border-top: 1px solid var(--line); padding: 24px 0; }
+.more-sightseeing > h3 { font-size: 28px; }
+.more-sightseeing > p { margin: 12px 0 22px; color: var(--muted); font-size: 16px; }
+.sightseeing-group { display: grid; grid-template-columns: 230px 1fr; gap: 25px; padding: 15px 0; border-top: 1px solid var(--line); }
+.sightseeing-group h4 { font-size: 14px; font-weight: 500; margin: 10px 0; }
+.sightseeing-group ul { display: flex; flex-wrap: wrap; gap: 4px 20px; list-style: none; padding: 0; margin: 0; }
+.sightseeing-group a { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; font-size: 14px; border-bottom: 1px solid #d4d8cb; }
+.sightseeing-group a:hover { color: var(--rust); border-color: var(--rust); }
+.sightseeing-group a span { color: var(--rust); }
+.longer-excursion { margin-top: 18px; padding: 22px 25px; background: #e7ebdf; }
+.longer-excursion h4 { font: 25px 'Fraunces', Georgia, serif; margin: 8px 0 12px; }
+.longer-excursion p { color: var(--muted); font-size: 16px; }
+.longer-excursion .text-link { margin-top: 8px; }
+@media(max-width:700px) { .sightseeing-group { grid-template-columns: 1fr; gap: 0; } .sightseeing-group ul { gap: 3px 15px; } .longer-excursion { padding: 20px; } }

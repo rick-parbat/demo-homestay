@@ -1,0 +1,54 @@
+.perks-section { background: #e7ebdf; padding: 42px 0 30px; }
+.experience-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: end; }
+.experience-heading h2 { margin-top: 12px; }
+.experience-heading > p { color: var(--muted); font-size: 16px; max-width: 46ch; }
+.perks-grid { display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; margin: 30px 0 20px; padding: 0; gap: 26px 32px; }
+.perks-grid li { display: flex; gap: 15px; border-top: 1px solid #c8d0c0; padding-top: 19px; }
+.perks-grid svg { flex-shrink: 0; color: #516a4d; }
+.perks-grid h3 { font-size: 21px; letter-spacing: -.3px; line-height: 1.3; margin-bottom: 9px; }
+.perks-grid p { font-size: 16px; color: var(--muted); }
+.experience-note { color: var(--muted); font-size: 12px; padding-top: 13px; }
+.activities-section { padding-top: 40px; padding-bottom: 40px; }
+.activities-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; list-style: none; margin: 28px 0 0; padding: 0; }
+.activities-list li { border-top: 1px solid var(--line); padding-top: 17px; }
+.activity-number { display: block; color: var(--rust); font-family: 'Fraunces', Georgia, serif; font-size: 29px; margin-bottom: 10px; }
+.activities-list .eyebrow { color: var(--muted); font-size: 9px; letter-spacing: 1.4px; }
+.activities-list h3 { font-size: 25px; margin: 11px 0; }
+.activities-list p:not(.eyebrow) { color: var(--muted); font-size: 16px; }
+.retreat-faq { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; padding-top: 10px; padding-bottom: 50px; }
+.retreat-faq h2 { font-size: 36px; margin: 12px 0 20px; }
+.faq-list details { border-top: 1px solid var(--line); }
+.faq-list details:last-child { border-bottom: 1px solid var(--line); }
+.faq-list summary { display: flex; justify-content: space-between; gap: 20px; align-items: center; min-height: 60px; padding: 17px 0; cursor: pointer; font-size: 16px; list-style: none; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary:focus-visible { outline: 3px solid var(--rust); outline-offset: 3px; }
+.faq-list summary:hover { color: var(--rust); }
+.faq-indicator::before { content: '+'; color: var(--rust); font-size: 22px; }
+.faq-list details[open] .faq-indicator::before { content: '−'; }
+.faq-list details > p { padding: 0 28px 20px 0; color: var(--muted); font-size: 16px; }
+@media (max-width: 999px) {
+  .perks-grid { grid-template-columns: repeat(2, 1fr); }
+  .experience-heading { gap: 30px; }
+  .activities-list { gap: 22px; }
+  .retreat-faq { gap: 35px; }
+}
+@media (max-width: 700px) {
+  .perks-section { padding: 32px 0 24px; }
+  .experience-heading { grid-template-columns: 1fr; gap: 17px; }
+  .perks-grid { grid-template-columns: 1fr; gap: 19px; margin-top: 24px; }
+  .perks-grid li { gap: 17px; }
+  .perks-grid h3 { font-size: 22px; }
+  .activities-section { padding-top: 32px; padding-bottom: 20px; }
+  .activities-list { grid-template-columns: 1fr; gap: 22px; }
+  .activities-list li { position: relative; padding-left: 42px; }
+  .activity-number { position: absolute; left: 0; top: 15px; font-size: 24px; }
+  .retreat-faq { grid-template-columns: 1fr; gap: 22px; padding-bottom: 35px; }
+  .retreat-faq h2 { font-size: 33px; }
+}
+.perks-section + .mountain-section { padding-top: 32px; }
+.hero-bengali { color: #e0e6db; font-size: 17px; line-height: 1.9; margin-bottom: 14px; max-width: 48ch !important; }
+.perks-grid { grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.perks-grid li { flex-direction: column; gap: 12px; }
+@media (max-width: 1100px) { .perks-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .perks-grid { grid-template-columns: 1fr; } .perks-grid li { flex-direction: row; gap: 17px; } .hero-bengali { font-size: 16px; } }
+.retreat-site .perks-grid h3 { font-size: 22px; line-height: 1.3; letter-spacing: -.3px; }

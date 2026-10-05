@@ -1,0 +1,53 @@
+/* Photography layer: keeps the forest / cream / terracotta identity. */
+.retreat-hero { background: #243b36; isolation: isolate; }
+.hero-photograph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 47%; z-index: -2; }
+.hero-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg,rgba(12,28,24,.78),rgba(15,30,28,.44) 44%,rgba(14,27,28,.08) 77%),linear-gradient(0deg,rgba(10,24,24,.72),transparent 48%); }
+.hero-inner { padding-top: 90px; padding-bottom: 25px; }
+.hero-inner h1 { font-size: clamp(48px,6vw,78px); max-width: 680px; }
+.hero-description { max-width: 460px !important; color: #f0efe7; }
+.hero-bengali { color: #f0e7d4; }
+.hero-actions { margin-bottom: 74px; }
+.hero-bottom { color: #e6e8dd; letter-spacing: 1.5px; }
+.visual { overflow: hidden; background: #e3dfd2; }
+.visual img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.visual figcaption { background: transparent; padding: 12px 0; font-size: 10px; letter-spacing: 1.1px; color: #5b675b; }
+.room-pair .visual, .split-section .visual { background: transparent; }
+.visual--mountain { position: relative; }
+.visual--mountain img { aspect-ratio: 2.7 / 1; max-height: 480px; object-position: center 53%; }
+.visual--mountain figcaption { position: absolute; inset: auto 0 0; background: linear-gradient(transparent,rgba(16,36,26,.72)); color: #f3f0e7; padding: 35px max(24px,calc((100vw - 1180px)/2)) 18px; text-align: right; }
+.visual--destination img { aspect-ratio: 5 / 4; }
+.visual--food img { aspect-ratio: 5 / 4; object-position: 50% 63%; }
+.room-pair { gap: 36px; }
+.rooms-section { padding-top: 70px; }
+.retreat-site .section-heading h2 { font-size: clamp(34px,3.8vw,48px); }
+.destination-photo-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin: 32px 0 30px; }
+.destination-photo { position: relative; display: block; overflow: hidden; background: #344b3c; color: white; }
+.destination-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .7s ease; }
+.destination-photo--rishop img { object-position: 53% 58%; }
+.destination-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(transparent 38%,rgba(12,26,20,.82)); pointer-events: none; }
+.destination-photo-caption { position: absolute; left: 23px; right: 23px; bottom: 24px; z-index: 1; }
+.retreat-site .destination-photo-caption h3 { font-size: 27px; margin-top: 9px; color: #fffdf6; letter-spacing: -.5px; }
+.destination-photo-caption .eyebrow { font-size: 9px; letter-spacing: 1.8px; color: #eeeede; }
+.photo-arrow { display: inline-block; margin-top: 14px; color: #eeeede; font-size: 20px; }
+.destination-photo:hover img { transform: scale(1.035); }
+.destination-photo:focus-visible { outline-offset: 5px; }
+@media(max-width:999px) { .destination-photo-grid { gap: 14px; } .destination-photo-caption { left: 16px; right: 14px; bottom: 17px; } .retreat-site .destination-photo-caption h3 { font-size: 23px; } }
+@media(max-width:700px) {
+ .hero-inner { padding-top: 58px; } .hero-photograph { object-position: 58% 50%; } .hero-shade { background: linear-gradient(90deg,rgba(11,26,25,.64),rgba(11,26,25,.3)),linear-gradient(0deg,rgba(11,26,25,.82),rgba(11,26,25,.12) 85%); }
+ .hero-inner h1 { font-size: clamp(44px,11vw,64px); } .hero-actions { margin-bottom: 45px; }
+ .hero-bottom { font-size: 8px; letter-spacing: 1px; } .hero-bottom>span:last-child { display: block; margin-top: 6px; font-size: 7px; opacity: .85; } .hero-bottom { display: block; }
+ .visual--mountain img { aspect-ratio: 16 / 10; } .visual--mountain figcaption { font-size: 8px; text-align: left; padding: 30px 20px 13px; }
+ .rooms-section { padding-top: 40px; } .room-pair { gap: 30px; } .visual--food img, .visual--destination img { aspect-ratio: 4 / 3; }
+ .destination-photo-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+ .destination-photo:first-child { grid-column: 1 / -1; } .destination-photo:first-child img { aspect-ratio: 16 / 10; }
+ .destination-photo img { aspect-ratio: 3 / 4; } .retreat-site .destination-photo-caption h3 { font-size: 21px; } .destination-photo-caption .eyebrow { font-size: 8px; letter-spacing: .8px; }
+ .destination-photo-caption { left: 14px; right: 10px; bottom: 16px; } .photo-arrow { font-size: 18px; margin-top: 8px; }
+}
+@media(prefers-reduced-motion:reduce) { .destination-photo img { transition: none; } .destination-photo:hover img { transform: none; } }
+
+/* Owner-supplied identity, preserved without redrawing. */
+.brand .retreat-logo { display:block; width:68px; height:68px; object-fit:contain; border-radius:50%; flex-shrink:0; }
+.opening-inner > .retreat-logo { width:112px; height:112px; border-radius:50%; margin-bottom:20px; }
+.footer-brand { display:inline-block; }
+.footer-brand .retreat-logo { display:block; width:128px; height:128px; border-radius:50%; }
+@media(max-width:700px) { .brand .retreat-logo { width:56px; height:56px; } .brand { font-size:18px; } }
