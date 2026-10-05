@@ -26,7 +26,7 @@ phone +91 7001268181, WhatsApp +91 9593487208, divineview15@gmail.com.
 All enquiry buttons open the same prefilled WhatsApp message; visitors send it themselves.
 Bookings are now open, as confirmed by the owner; stays begin after completion. No stay-opening date, rates, ratings or live availability are asserted. The owner-provided 3.5-hour NJP/Siliguri journey and 2–3 minute waterfall walk are labelled as estimates, subject to conditions.
 Eight perks and three activity ideas cover the owner’s complete offering list. Garden spaces, bonfire/BBQ evenings and pickup assistance are explicitly planned, with arrangements to be confirmed. No facilities are copied from the reference property as guarantees.
-The map identifies the Ramdhura area and explicitly does not claim an exact property pin.
+The map uses the owner-supplied pin at 27.1336667, 88.5661389 from https://maps.app.goo.gl/tAL5aGPGhumGusG37. Directions target these coordinates while the business listing is being added to Google Maps.
 
 ## Validation
 
@@ -37,7 +37,7 @@ overflow, valid section anchors, stacked room blocks and working mobile menu lin
 The initial redesign measured 4393px versus 7282px at 1280px. Subsequent owner-requested additions include nearby places, retreat perks, activities and a compact FAQ, so that initial length comparison no longer describes the current page.
 Cleaned images and destination photography reviewed in the browser; all nine images load.
 
-The redesign is local; no production deployment has been performed.
+Production: https://demo-homestay-tawny.vercel.app/ — GitHub main automatically deploys through the Vercel demo-homestay project, with client as the root directory.
 
 FAQ expansion was checked by pointer and keyboard; the new sections were checked at 390px and 1280px with no horizontal overflow or broken section links. Component inspiration: https://mairungmistypeaks.in/ — structure only; no photos, reviews or property-specific promises were reused.
 
