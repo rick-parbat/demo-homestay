@@ -1,5 +1,5 @@
 import { posts } from './blogPosts.js';
-export const origin = 'https://demo-homestay-tawny.vercel.app';
+export const origin = 'https://www.divineviewretreat.in';
 export const pages = [
   { path: '/', title: 'Divine View Retreat | Homestay in Ramdhura, Burmaik, Kalimpong', description: 'Plan your mountain escape at Divine View Retreat in Ramdhura, Burmaik, Kalimpong. Explore rooms, Bengali meals and local trips. Bookings open; stays after completion.' },
   { path: '/blog/', title: 'Ramdhura & Kalimpong Travel Guides | Divine View Retreat', description: 'Read the Hill Journal: practical guides to choosing a homestay in Ramdhura and Burmaik, planning a Kalimpong break and arranging your arrival.' },

@@ -4,7 +4,7 @@ Add an article to `src/blogPosts.js` with a unique descriptive slug, title, desc
 
 Run `npm run build` and `node scripts/check-seo.mjs`. The build generates the homepage, journal, individual articles, XML sitemap, robots.txt and a not-found page as HTML. Commit and push to main to publish through the existing Vercel connection. There is no browser-based blog admin; article content lives in the repository.
 
-The canonical production origin is in `src/seo.js`. When a custom domain is connected, update it there and redirect the previous origin to it. Do not publish competing copies on multiple domains.
+The canonical production origin is `https://www.divineviewretreat.in`, configured in `src/seo.js`. The apex domain redirects to www. Use this custom domain for Search Console, sitemap submission and public links. If the primary domain changes, update the origin and redirect the previous origin to it.
 
 ## Owner setup still needed
 
