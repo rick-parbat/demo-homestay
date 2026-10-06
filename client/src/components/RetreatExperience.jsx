@@ -24,7 +24,7 @@ function ExperienceIcon({ name }) {
     room: <path d="M3 27V5h26v22M3 17h26M7 17v-6h8v6m2 0v-6h8v6M3 23h26M6 23v5m20-5v5"/>,
     leaf: <><path d="M7 24C-2 6 18 3 28 4c-1 13-6 24-21 20ZM5 29 23 10M12 21v-9m0 9h10"/></>,
     route: <><circle cx="7" cy="7" r="4"/><circle cx="25" cy="25" r="4"/><path d="M13 7h9a5 5 0 0 1 0 10H10a5 5 0 0 0 0 10h7"/></>,
-    fire: <><path d="M16 29c-5 0-9-3-9-8 0-4 3-7 6-10 0 3 2 4 3 5 0-5 3-8 4-12 4 4 6 9 5 14-1 6-4 11-9 11Z"/><path d="M13 22c0-2 2-3 3-5 2 2 3 4 2 6-1 2-4 2-5-1Z"/></></>,
+    fire: <><path d="M16 29c-5 0-9-3-9-8 0-4 3-7 6-10 0 3 2 4 3 5 0-5 3-8 4-12 4 4 6 9 5 14-1 6-4 11-9 11Z"/><path d="M13 22c0-2 2-3 3-5 2 2 3 4 2 6-1 2-4 2-5-1Z"/></>,
   };
   return <svg viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
 }
