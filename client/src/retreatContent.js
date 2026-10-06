@@ -9,8 +9,8 @@ export function responsiveImage(name) {
 }
 export const imagery = {
   mountain: { ...responsiveImage('mountain'), alt: 'Clouds over layered mountain slopes and a winding river', caption: 'Clouds, hills and open skies · Retouched landscape imagery' },
-  room: { ...responsiveImage('room'), alt: 'Room concept with warm wood details and a wide mountain-facing window', caption: 'Rest well · Room concept' },
-  balcony: { ...responsiveImage('balcony'), alt: 'Balcony concept with warm evening light and a mountain outlook', caption: 'Step outside · Balcony concept' },
+  room: { ...responsiveImage('room-warm'), alt: 'Warmly styled bedroom with burgundy cushions and a doorway opening towards the hills', caption: 'Rest well · Enhanced room image' },
+  balcony: { ...responsiveImage('balcony-swing'), alt: 'Balcony concept with a black woven swing chair and a warm mountain sunset', caption: 'Step outside · Balcony concept' },
   food: { ...responsiveImage('food'), alt: 'A generous spread of curries, rice and flatbreads', caption: 'The warmth of a home kitchen · Food inspiration' },
   destination: { ...responsiveImage('destination'), alt: 'River bends framed by forested mountain slopes', caption: 'Away from the usual · Retouched landscape imagery' },
 };

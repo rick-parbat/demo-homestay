@@ -22,3 +22,7 @@ Originals remain untouched in the owner's `website poster` folder. The image-gen
 The duplicate balcony 4.jpg was not used. Room and balcony images are labelled concepts; food is labelled inspiration. Landscape imagery is retouched. Stock destination photographs are not represented as property photographs or guaranteed room views.
 
 Responsive WebP files are produced by `scripts/prepare-retreat-images.mjs`. Sharp only resizes/encodes the cleaned masters; it does not remove text or generate scene content.
+
+## Room and swing update — 6 October 2026
+
+`room-warm.png` replaces the room slot with the owner-supplied WhatsApp Image 2026-10-06 at 11.34.22.jpeg, edited for warm lighting and polished presentation. `balcony-swing.png` preserves the balcony concept and adds a black woven freestanding swing based on WhatsApp Image 2026-10-06 at 11.34.13.jpeg. Both edits use the image-generation editor; source uploads remain untouched.
