@@ -2,7 +2,7 @@
 
 Add an article to `src/blogPosts.js` with a unique descriptive slug, title, description, category, an existing licensed image name and alt text, a real publication date, introduction and sections. Use useful original information; verify destination claims and do not promise views, rates or facilities that are unconfirmed. Dates must reflect actual publication, not automatically change with each build.
 
-Run `npm run build` and `node scripts/check-seo.mjs`. The build generates the homepage, journal, individual articles, XML sitemap, robots.txt and a not-found page as HTML. Commit and push to main to publish through the existing Vercel connection. There is no browser-based blog admin; article content lives in the repository.
+Run `npm run build` and `node scripts/check-seo.mjs`. The build generates the homepage, journal, individual articles, XML sitemap, robots.txt and a not-found page as HTML. The public `robots.txt` points crawlers to the custom-domain sitemap; the build refreshes both SEO files so new articles are included automatically. Commit and push to main to publish through the existing Vercel connection. There is no browser-based blog admin; article content lives in the repository.
 
 The canonical production origin is `https://www.divineviewretreat.in`, configured in `src/seo.js`. The apex domain redirects to www. Use this custom domain for Search Console, sitemap submission and public links. If the primary domain changes, update the origin and redirect the previous origin to it.
 
