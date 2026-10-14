@@ -1,6 +1,5 @@
 {
   "routes": [
-    { "src": "/.*", "status": 503, "dest": "/maintenance.html", "headers": { "Cache-Control": "no-store", "Retry-After": "3600" } },
     { "handle": "filesystem" },
     { "src": "/.*", "status": 404, "dest": "/404.html" }
   ]
